@@ -2,7 +2,7 @@
 
 #include <string>
 #include <unistd.h>
-
+#include <cstdint>
 using std::string;
 
 class ConsoleGfx

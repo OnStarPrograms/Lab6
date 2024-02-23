@@ -9,6 +9,7 @@ using namespace std;
 
 int main(){
 
+    // make instance
     ConsoleGfx* bruh = ConsoleGfx::getInstance();
 
     cout << "Scaler Menu\n";
@@ -19,6 +20,8 @@ int main(){
     cout << "4. Enlarge Image\n";
     cout << "5. Shrink Image\n";
     cout << "6. Show Image Properties\n";
+
+    bruh->displayImage(bruh->testRainbow);
 
     return 0;
 }
