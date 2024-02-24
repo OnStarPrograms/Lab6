@@ -1,5 +1,6 @@
 //
-// Created by lukea on 2/23/2024.
+// Created by lukea on 2/23/2024. 
+// Finally got working on Aidens machine 2/23/2024 at 7:12 pm
 //
 
 #include <iostream>
