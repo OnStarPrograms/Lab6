@@ -6,25 +6,27 @@
 
 Image::Image(unsigned char *imageData)
 {
-    ImageData = *imageData;
+    ImageData = imageData;
 }
 unsigned char* Image::getImageData()
 {
-    return &ImageData;
+    return ImageData;
 }
 unsigned char* Image::getPixelData()
 {
-    return &PixelData;
+    return PixelData;
 }
 unsigned char Image::getWidth()
 {
-    return Width;
+    unsigned char width = ImageData[0];
+    return width;
 }
 unsigned char Image::getHeight()
 {
-    return Height;
+    unsigned char height = ImageData[1];
+    return height;
 }
 void Image::setImageData(unsigned char *newData)
 {
-    ImageData = *newData;
+    ImageData = newData;
 }

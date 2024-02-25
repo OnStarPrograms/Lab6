@@ -15,10 +15,8 @@ class Image {
         unsigned char getHeight();
         void setImageData(unsigned char *newData);
     private:
-        unsigned char Height;
-        unsigned char Width;
-        unsigned char ImageData;
-        unsigned char PixelData;
+        unsigned char* ImageData;
+        unsigned char* PixelData;
 };
 
 
