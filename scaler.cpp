@@ -10,7 +10,8 @@ using namespace std;
 
 bool load_file(Image &image, ConsoleGfx* bruh);
 
-int main(){
+int main()
+{
     int Choice;
     bool keep = true;
     bool check;
@@ -18,7 +19,7 @@ int main(){
     ConsoleGfx* bruh = ConsoleGfx::getInstance();
     cout << "Displaying Spectrum Image:\n";
     bruh->displayImage(bruh->testRainbow);
-    Image image(bruh->testRainbow);
+    Image image(nullptr);
 
     while (keep){
         cout << "Scaler Menu\n";
@@ -50,12 +51,36 @@ int main(){
             {
                 cout << "Error: could not load file." << endl << endl;
             }
+            break;
+        case 2:
+            image.setImageData(bruh->testImage);
+            cout << "File loaded." << endl << endl;
+            break;
+        case 3:
+            if (image.getImageData() != nullptr)
+            {
+                bruh->displayImage(image.getImageData());
+                cout << endl;
+            }
+            else
+            {
+                cout << "Error no image loaded." << endl;
+            }
+            break;
+        case 4:
+
+            break;
+            //Ill get to this later
+        case 5:
+
+            break;
+            //You wanna take this?
+        case 6:
+            cout << "Image Dimensions: (" << (int)image.getWidth() << ", "<< (int)image.getHeight() << ")" << endl << endl;
+            break;
         default:
             break;
         }
-        unsigned char add = image.getHeight();
-        int abd = (int)add;
-        cout << abd;
     }
     return 0;
 }

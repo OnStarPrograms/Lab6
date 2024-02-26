@@ -14,6 +14,7 @@ unsigned char* Image::getImageData()
 }
 unsigned char* Image::getPixelData()
 {
+    PixelData = &ImageData[3];
     return PixelData;
 }
 unsigned char Image::getWidth()
