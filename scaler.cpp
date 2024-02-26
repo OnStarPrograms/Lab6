@@ -17,9 +17,11 @@ int main()
     bool check;
     // make instance
     ConsoleGfx* bruh = ConsoleGfx::getInstance();
+    Image image(nullptr);
+
+    cout << "Welcome to the Image Scaler!" << endl << endl;
     cout << "Displaying Spectrum Image:\n";
     bruh->displayImage(bruh->testRainbow);
-    Image image(nullptr);
 
     while (keep){
         cout << "Scaler Menu\n";
@@ -68,15 +70,27 @@ int main()
             }
             break;
         case 4:
-
+            // Image enlargment
             break;
             //Ill get to this later
-        case 5:
 
+
+        case 5:
+            // Image Reducer
             break;
             //You wanna take this?
+
+            
         case 6:
-            cout << "Image Dimensions: (" << (int)image.getWidth() << ", "<< (int)image.getHeight() << ")" << endl << endl;
+            //fix six to give an error (Fixed)
+            if (image.getImageData() != nullptr)
+            {
+                cout << "Image Dimensions: (" << (int)image.getWidth() << ", "<< (int)image.getHeight() << ")" << endl << endl;
+            }
+            else
+            {
+                cout << "Error: no image loaded." << endl;
+            }
             break;
         default:
             break;
