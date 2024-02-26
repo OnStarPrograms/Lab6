@@ -4,7 +4,7 @@
 
 #include "Image.h"
 
-Image::Image(unsigned char *imageData)
+Image::Image(unsigned char* imageData)
 {
     ImageData = imageData;
 }
@@ -27,7 +27,7 @@ unsigned char Image::getHeight()
     unsigned char height = ImageData[1];
     return height;
 }
-void Image::setImageData(unsigned char *newData)
+void Image::setImageData(unsigned char* newData)
 {
     ImageData = newData;
 }
