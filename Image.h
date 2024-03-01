@@ -16,7 +16,6 @@ class Image {
         void setImageData(unsigned char* newData);
     private:
         unsigned char* ImageData;
-        unsigned char* PixelData;
 };
 
 

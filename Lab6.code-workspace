@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../Downloads/getopt9/getopt9"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp"
+		}
+	}
+}
