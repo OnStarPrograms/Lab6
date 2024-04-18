@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/aiden/Desktop/College/UFCollegeProgramming/Project4/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Project4.dir/includes_CXX.rsp -g -o CMakeFiles\\Project4.dir\\main.cpp.obj -c C:\\Users\\aiden\\Desktop\\College\\UFCollegeProgramming\\Project4\\main.cpp",
+  "file": "C:/Users/aiden/Desktop/College/UFCollegeProgramming/Project4/main.cpp",
+  "output": "CMakeFiles/Project4.dir/main.cpp.obj"
+}
+]
